@@ -116,7 +116,7 @@ export const MiniApp = () => {
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] max-lg:mt-6 text-[72px]">Mini-App</h3>
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">Mini-App</h3>
 
       <div className="max-md:justify-center flex flex-wrap items-center gap-[15px] mb-10">
         {tabs.map((item) => (

@@ -7,7 +7,7 @@ export const MoreDetails = () => {
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] max-lg:mt-6 text-[72px]">Подробнее</h3>
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">Подробнее</h3>
 
       <MoreCards
         title="Почему Telegram Mini-App?"
