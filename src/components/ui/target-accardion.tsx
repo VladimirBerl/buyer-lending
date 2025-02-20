@@ -38,7 +38,7 @@ export const TargetAccardion = ({
         <div className="flex items-center gap-2">
           <p className="uppercase text-[26px] font-bold ml-16">{title}</p>
           <Image
-            className={toggle ? "-rotate-90" : "rotate-90"}
+            className={toggle ? "-rotate-90 transition-all" : "rotate-90 transition-all"}
             src="/icon/arrow-right.svg"
             width={20}
             height={20}
