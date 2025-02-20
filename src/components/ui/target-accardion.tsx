@@ -69,7 +69,7 @@ export const TargetAccardion = ({
                   />
                 </div>
 
-                <div className="flex items-center gap-2 mb-[15px]">
+                <div className="flex items-start gap-2 mb-[15px]">
                   <div className="flex-shrink-0 size-[33px] rounded-full flex items-center justify-center bg-[#f4f4f44c]">
                     <Image
                       src="/icon/bitcoin-logo.svg"
