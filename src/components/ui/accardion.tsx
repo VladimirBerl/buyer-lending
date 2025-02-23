@@ -16,8 +16,8 @@ export const Accardion = ({ title, desc, className }: AccardionProps) => {
       onClick={() => setIsOpen(!isOpen)}
       className={`backdrop-blur-[15px] w-1/3 cursor-pointer border-[#AA87E2] border-[1px] rounded-[32px] py-[30px] px-[20px] ${className}`}
     >
-      {!isOpen && <p className="font-semibold text-[25px] mb-3">{title}</p>}
-      {isOpen && <p>{desc}</p>}
+      {!isOpen && <p className="font-semibold text-[25px] max-lg:text-lg mb-3">{title}</p>}
+      {isOpen && <p className="font-involve">{desc}</p>}
       <p className="text-xs text-[#AA87E2] text-end">
         {isOpen ? "скрыть" : "подробнее..."}
       </p>

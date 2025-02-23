@@ -119,7 +119,7 @@ export const TGBuyerWorks = () => {
           WebkitTextFillColor: "transparent",
           WebkitBackgroundClip: "text",
         }}
-        className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px] bg-clip-text bg-custom-gradient animate-gradient"
+        className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px] bg-clip-text bg-custom-gradient animate-gradient"
       >
         Проблемы, которые <br /> решает TG_BUYER
       </h3>
@@ -153,7 +153,7 @@ export const TGBuyerWorks = () => {
               isActiveTab === item.id
                 ? "max-lg:w-[40%] max-[480px]:w-full max-md:w-[48%] w-[30%] border-transparent bg-[#5F29B7]"
                 : "max-lg:w-[30%] max-md:w-[48%] max-[480px]:w-full w-[20%] border-[#B4B4B4] bg-transparent"
-            } font-semibold backdrop-blur-[15px] text-lg px-[18px] py-[16.5px] rounded-[26px] border-[1px] border-[#B4B4B4] transition-all duration-400`}
+            } max-sm:text-sm font-semibold backdrop-blur-[15px] text-lg px-[18px] py-[16.5px] rounded-[26px] border-[1px] border-[#B4B4B4] transition-all duration-400`}
           >
             {item.name}
           </button>
@@ -182,7 +182,7 @@ export const TGBuyerWorks = () => {
                   alt="image"
                 />
               )}
-              <p>{item.desc}</p>
+              <p className="font-involve">{item.desc}</p>
             </div>
           </div>
         ))}

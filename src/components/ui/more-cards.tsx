@@ -45,8 +45,8 @@ export const MoreCards = ({
                   alt="arrow"
                 />
                 <div>
-                  <p className="font-bold text-lg mb-1">{item.title}</p>
-                  <p>{item.desc}</p>
+                  <p className="font-bold text-lg mb-1 font-involve">{item.title}</p>
+                  <p className="font-involve">{item.desc}</p>
                 </div>
               </li>
             ))}

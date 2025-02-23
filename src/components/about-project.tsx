@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export const AboutProject = () => {
   return (
-    <section className="flex flex-col gap-10 relative px-4 mb-[100px] max-md:h-full h-[80vh]">
+    <section id="about" className="flex flex-col gap-10 relative px-4 mb-[100px] max-md:h-full h-[80vh]">
       <div className="absolute top-0 left-0 right-0 w-full border-[#AA87E2] border-[1px] border-b-0 rounded-tl-[32px] rounded-tr-[32px] pt-[23px] px-[16px] ml-auto block text-[#909090] text-xs text-end">
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">О проекте</h3>
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">О проекте</h3>
       <p
         style={{
           WebkitTextFillColor: "transparent",

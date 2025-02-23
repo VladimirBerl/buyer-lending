@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        involve: ["var(--font-involve)", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -67,6 +70,8 @@ export default {
           "linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(112,97,170,1) 50%, rgba(52,14,115,1) 100%);",
         "custom-gradient-three":
           "radial-gradient(circle, rgba(98,51,172,1) 0%, rgba(0,0,0,1) 60%)",
+        "custom-gradient-four":
+          "linear-gradient(180deg, rgba(112,97,170,1) 0%, rgba(52,14,115,1) 50%)",
       },
     },
   },

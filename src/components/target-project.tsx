@@ -1,8 +1,12 @@
+"use client";
+
 import { TargetAccardion } from "@/components/ui/target-accardion";
 import Image from "next/image";
+import { useState } from "react";
 
 const accardionList = [
   {
+    id: 1,
     title: "Для покупателей",
     list: [
       {
@@ -20,6 +24,7 @@ const accardionList = [
     ],
   },
   {
+    id: 2,
     title: "Для продавцов",
     list: [
       {
@@ -37,6 +42,7 @@ const accardionList = [
     ],
   },
   {
+    id: 3,
     title: "Для инвесторов",
     list: [
       {
@@ -54,6 +60,7 @@ const accardionList = [
     ],
   },
   {
+    id: 4,
     title: "Для экосистемы TON",
     list: [
       {
@@ -71,6 +78,7 @@ const accardionList = [
     ],
   },
   {
+    id: 5,
     title: "Для проекта",
     list: [
       {
@@ -90,17 +98,19 @@ const accardionList = [
 ];
 
 export const TargetProject = () => {
+  const [isActiveTab, setIsActiveTab] = useState(1);
+
   return (
     <section className="flex flex-col gap-10 relative px-4 mb-[100px]">
       <div className="absolute top-0 left-0 right-0 w-full border-[#AA87E2] border-[1px] border-b-0 rounded-tl-[32px] rounded-tr-[32px] pt-[23px] px-[16px] ml-auto block text-[#909090] text-xs text-end">
         TG_BUYER
       </div>
-      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">
         Цели проекта
       </h3>
 
-      <div className="flex gap-6 w-1/2 h-full">
-        <div className="flex items-center justify-center flex-shrink-0 border-[2px] border-[#E9FF7A] rounded-[15px] w-[7%]">
+      <div className="max-lg:w-full flex gap-6 w-1/2 h-full">
+        <div className="hidden lg:flex items-center justify-center flex-shrink-0 border-[2px] border-[#E9FF7A] rounded-[15px] w-[7%]">
           <Image
             src="/icon/target-arrow.svg"
             width={15}
@@ -108,7 +118,7 @@ export const TargetProject = () => {
             alt="arrow"
           />
         </div>
-        <p>
+        <p className="font-involve">
           Цели проекта направлены на создание уникальной платформы, которая
           соединяет экономическую выгоду, удобство использования и инновации
           Web3, одновременно стимулируя развитие экосистемы TON и привлекая
@@ -116,7 +126,51 @@ export const TargetProject = () => {
         </p>
       </div>
 
-      <ul className="flex flex-col gap-12">
+      <ul className="max-md:justify-center flex flex-wrap items-center gap-[15px]">
+        {accardionList.map((item) => (
+          <button
+            onClick={() => setIsActiveTab(item.id)}
+            key={item.id}
+            className={`${
+              isActiveTab === item.id
+                ? "max-lg:w-[40%] max-[480px]:w-full max-md:w-[48%] w-[30%] border-transparent bg-[#5F29B7]"
+                : "max-lg:w-[30%] max-md:w-[48%] max-[480px]:w-full w-[20%] border-[#B4B4B4] bg-transparent"
+            } max-sm:text-sm font-semibold backdrop-blur-[15px] text-lg px-[18px] py-[16.5px] rounded-[26px] border-[1px] border-[#B4B4B4] transition-all duration-400`}
+          >
+            {item.title}
+          </button>
+        ))}
+      </ul>
+
+      <ul className="max-lg:flex-col flex gap-5 mb-10">
+        {accardionList[isActiveTab - 1].list.map((item, index) => (
+          <li
+            key={index}
+            className="max-xl:w-full bg-[#392D76] rounded-[17px] py-[20px] px-[30px] w-[25%]"
+          >
+            <div className="size-[28px] rounded-full flex items-center justify-center bg-[#FFFFFF] ml-auto">
+              <Image src="/icon/pluse.svg" width={12} height={12} alt="pluse" />
+            </div>
+
+            <div className="flex items-start gap-2 mb-[15px]">
+              <div className="flex-shrink-0 size-[33px] rounded-full flex items-center justify-center bg-[#f4f4f44c]">
+                <Image
+                  src="/icon/bitcoin-logo.svg"
+                  width={12}
+                  height={16}
+                  alt="bitcoin"
+                />
+              </div>
+
+              <p className="font-bold text-[16px]">{item.title}</p>
+            </div>
+
+            <p>{item.desc}</p>
+          </li>
+        ))}
+      </ul>
+
+      <ul className="hidden lg:flex flex-col gap-12">
         {accardionList.map((item, index) => (
           <li
             style={{ marginLeft: `${index === 0 ? "0" : index * 2}rem` }}

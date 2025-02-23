@@ -20,7 +20,7 @@ export const Main = () => (
       />
 
       <Image
-        className="hidden lg:block absolute top-0 right-0 animate-wrap size-[10vw]"
+        className="hidden lg:block absolute top-0 right-0 animate-wrap max-xl:size-[10vw]"
         src="/images/text-circle.png"
         width={157}
         height={157}
@@ -68,9 +68,9 @@ export const Main = () => (
                 height={14}
                 alt="arrow"
               />
-              <p className="">Пакупателям</p>
+              <p className="font-involve">Пакупателям</p>
             </div>
-            <p className="px-[18px]">Находить товары с кэшбэком до 100%</p>
+            <p className="px-[18px] font-involve">Находить товары с кэшбэком до 100%</p>
           </div>
 
           <div className="flex items-center border-[#7061aa] rounded-[30px] border-[1px] backdrop-blur-[15px] bg-[#ffffff20]">
@@ -81,9 +81,9 @@ export const Main = () => (
                 height={14}
                 alt="arrow"
               />
-              <p className="">Продавцам</p>
+              <p className="font-involve">Продавцам</p>
             </div>
-            <p className="px-[18px]">Эффективно продвигать свои продукты</p>
+            <p className="px-[18px] font-involve">Эффективно продвигать свои продукты</p>
           </div>
 
           <div className="flex items-center border-[1px] border-[#7061aa] rounded-[30px] backdrop-blur-[15px] bg-[#ffffff20]">
@@ -94,9 +94,9 @@ export const Main = () => (
                 height={14}
                 alt="arrow"
               />
-              <p className="">Инвесторам</p>
+              <p className="font-involve">Инвесторам</p>
             </div>
-            <p className="px-[18px]">
+            <p className="px-[18px] font-involve">
               Участвовать в развивающемся проекте с прозрачной бизнес-моделью
             </p>
           </div>
@@ -152,7 +152,7 @@ export const Main = () => (
         </li>
       </ul>
       <Image
-        className="max-lg:hidden ml-auto w-[13vw]"
+        className="max-lg:hidden ml-auto max-w-[170px] max-xl:w-[13vw]"
         src="/images/home-iphone.png"
         width={170}
         height={211}
@@ -191,11 +191,11 @@ export const Main = () => (
 
     <div className="max-md:block hidden mb-[100px]">
       <ul className="flex flex-col gap-3">
-        <li className="text-center text-[17px]">Интеграция с AI</li>
-        <li className="text-center text-[17px]">
+        <li className="text-center text-[17px] font-involve">Интеграция с AI</li>
+        <li className="text-center text-[17px] font-involve">
           Интеграция с инфраструктурой Web3
         </li>
-        <li className="text-center text-[17px]">
+        <li className="text-center text-[17px] font-involve">
           Интеграция с TON Токены, Звезды TG, Монеты для проведения платежей
         </li>
       </ul>

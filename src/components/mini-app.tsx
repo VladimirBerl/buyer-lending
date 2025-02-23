@@ -116,7 +116,7 @@ export const MiniApp = () => {
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">Mini-App</h3>
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">Mini-App</h3>
 
       <div className="max-md:justify-center flex flex-wrap items-center gap-[15px] mb-10">
         {tabs.map((item) => (
@@ -177,12 +177,12 @@ export const MiniApp = () => {
             <div key={index} className="pl-3 w-full">
               <div className="min-h-[300px] border-[1px] border-[#402E5C] rounded-[26px] backdrop-blur-[15px] px-[16px] py-[26px]">
                 <h4 className="mb-5 text-xl font-semibold">{item.title}</h4>
-                {item.desc && <p className="mb-2">{item.desc}</p>}
+                {item.desc && <p className="mb-2 font-involve">{item.desc}</p>}
                 {item.list && (
                   <ul className="list-disc pl-4">
                     {item.list.map((item, index) => (
                       <li
-                        className="w-full list-item list-disc break-words whitespace-normal"
+                        className="font-involve w-full list-item list-disc break-words whitespace-normal"
                         key={index}
                       >
                         {item}

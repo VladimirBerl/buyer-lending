@@ -5,21 +5,21 @@ export const Offer = () => {
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-6 text-[72px]">
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">
         Что предлагает <br /> TG_Buyer?
       </h3>
 
       <div className="max-xl:w-3/4 max-md:w-full max-md:mt-10 grid grid-cols-2 gap-9 w-1/2 ml-auto">
         <div className="max-sm:col-span-2 backdrop-blur-[15px] border-[#AA87E2] border-[1px] rounded-[32px] py-[30px] px-[20px]">
-          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4">
+          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4 font-involve">
             Для покупателей:
           </p>
 
           <ul className="list-decimal pl-3 text-[#E9E3F4]">
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Возможность экономить на покупках с кэшбэком до 100%.
             </li>
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Зарабатывать внутренние монеты, выполняя задания.
             </li>
             <li className="w-full list-item break-words whitespace-normal">
@@ -30,16 +30,16 @@ export const Offer = () => {
         </div>
 
         <div className="max-sm:col-span-2 backdrop-blur-[15px] border-[#AA87E2] border-[1px] rounded-[32px] py-[30px] px-[20px]">
-          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4">
+          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4 font-involve">
             Для продавцов:
           </p>
 
           <ul className="list-decimal pl-3 text-[#E9E3F4]">
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Доступные инструменты для продвижения товаров, увеличения продаж и
               улучшения рейтинга на маркетплейсах.
             </li>
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Гибкость в оплате услуг (рубли, внутренние монеты, криптовалюта
               TON, звезды Telegram).
             </li>
@@ -51,16 +51,16 @@ export const Offer = () => {
         </div>
 
         <div className="col-span-2 backdrop-blur-[15px] border-[#AA87E2] border-[1px] rounded-[32px] py-[30px] px-[20px]">
-          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4">
+          <p className="max-lg:text-lg text-[25px] font-semibold leading-[100%] mb-4 font-involve">
             Для инвесторов:
           </p>
 
           <ul className="list-decimal pl-3 text-[#E9E3F4]">
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Прозрачную бизнес-модель, основанную на размещении платных постов
               и активности пользователей.
             </li>
-            <li className="w-full list-item break-words whitespace-normal mb-1">
+            <li className="w-full list-item break-words whitespace-normal mb-1 font-involve">
               Потенциал роста стоимости токенов TGB благодаря механизму выкупа и
               сжигания.
             </li>

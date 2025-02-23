@@ -6,27 +6,49 @@ import "./globals.css";
 const nekst = localfont({
   src: [
     {
-      path: "../../public/fonts/Fontspring-DEMO-nekst-light.woff2",
+      path: "../../public/fonts/Nekst-Light.woff2",
       weight: "300",
     },
     {
-      path: "../../public/fonts/Fontspring-DEMO-nekst-regular.woff2",
+      path: "../../public/fonts/Nekst-Regular.woff2",
       weight: "400",
     },
     {
-      path: "../../public/fonts/Fontspring-DEMO-nekst-medium.woff2",
+      path: "../../public/fonts/Nekst-Medium.woff2",
       weight: "500",
     },
     {
-      path: "../../public/fonts/Fontspring-DEMO-nekst-semibold.woff2",
+      path: "../../public/fonts/Nekst-SemiBold.woff2",
       weight: "600",
     },
     {
-      path: "../../public/fonts/Fontspring-DEMO-nekst-bold.woff2",
+      path: "../../public/fonts/Nekst-Bold.woff2",
       weight: "700",
     },
   ],
   variable: "--font-nekst",
+});
+
+const involve = localfont({
+  src: [
+    {
+      path: "../../public/fonts/Involve-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/Involve-Medium.ttf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/Involve-SemiBold.ttf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/Involve-Bold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-involve",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${nekst.variable} max-w-[1440px] mx-auto px-4 antialiased`}
+        className={`${nekst.variable} ${involve.variable} max-w-[1440px] mx-auto antialiased`}
       >
         {children}
       </body>

@@ -1,4 +1,6 @@
 import { AboutProject } from "@/components/about-project";
+import { BusinessModel } from "@/components/business-model";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Main } from "@/components/main";
 import { MiniApp } from "@/components/mini-app";
@@ -11,15 +13,19 @@ import { TGBuyerWorks } from "@/components/tg-buyer-works";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Main />
-      <AboutProject />
-      <MiniApp />
-      <MoreDetails />
-      <Offer />
-      <TGBuyer />
-      <TargetProject />
-      <TGBuyerWorks />
+      <div className="px-4">
+        <Header />
+        <Main />
+        <AboutProject />
+        <MiniApp />
+        <MoreDetails />
+        <Offer />
+        <TGBuyer />
+        <TargetProject />
+        <TGBuyerWorks />
+      </div>
+      <BusinessModel />
+      <Footer />
     </>
   );
 }

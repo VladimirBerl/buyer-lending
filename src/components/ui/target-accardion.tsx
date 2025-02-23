@@ -79,10 +79,10 @@ export const TargetAccardion = ({
                     />
                   </div>
 
-                  <p className="font-bold text-[16px]">{item.title}</p>
+                  <p className="font-bold text-[16px] font-involve">{item.title}</p>
                 </div>
 
-                <p>{item.desc}</p>
+                <p className="font-involve">{item.desc}</p>
               </li>
             ))}
           </ul>

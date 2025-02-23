@@ -8,6 +8,7 @@ import Link from "next/link";
 import { navItem } from "@/config/config";
 
 export const Header = () => {
+  const [activeLink, setActiveLink] = useState(0);
   const headerRef = useRef<HTMLDivElement | null>(null);
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -33,6 +34,21 @@ export const Header = () => {
     setShowNavbar(!showNavbar);
   }
 
+  const scrollToSection = (id: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 100; // Отнимаем 100px от позиции
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth", // Плавный скроллинг
+      });
+    }
+  };
+
   return (
     <>
       <header
@@ -55,8 +71,18 @@ export const Header = () => {
         <nav className="max-lg:hidden">
           <ul className="flex items-center gap-x-4 gap-y-3">
             {navItem.map((item) => (
-              <li key={item.name}>
-                <Link className="px-[18px] py-[6px] text-[16px]" href={item.href}>
+              <li key={item.id}>
+                <Link
+                  onClick={(e) => {
+                    setActiveLink(item.id);
+                    scrollToSection(item.href.substring(1), e);
+                  }}
+                  className={`${
+                    activeLink === item.id &&
+                    "bg-[#E9FF7A] rounded-full text-black"
+                  } px-[18px] py-[6px] text-[16px]`}
+                  href={item.href}
+                >
                   {item.name}
                 </Link>
               </li>
@@ -66,6 +92,7 @@ export const Header = () => {
 
         {showNavbar && (
           <nav
+            onClick={(e) => e.target === e.currentTarget && toggleNavbar()}
             className="fixed inset-0"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
           >
@@ -83,8 +110,12 @@ export const Header = () => {
               </li>
 
               {navItem.map((item) => (
-                <li key={item.name}>
-                  <Link className="py-[6px] px-0 text-2xl" href={item.href}>
+                <li key={item.id}>
+                  <Link
+                    onClick={(e) => scrollToSection(item.href.substring(1), e)}
+                    className="py-[6px] px-0 text-2xl"
+                    href={item.href}
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -93,7 +124,10 @@ export const Header = () => {
           </nav>
         )}
       </header>
-      <div className="w-full" style={{ height: headerHeight + 20 + "px" }}></div>
+      <div
+        className="w-full"
+        style={{ height: headerHeight + 20 + "px" }}
+      ></div>
     </>
   );
 };
