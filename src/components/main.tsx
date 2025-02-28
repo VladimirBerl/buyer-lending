@@ -20,7 +20,7 @@ export const Main = () => (
       />
 
       <Image
-        className="hidden lg:block absolute top-0 right-0 animate-wrap max-xl:size-[10vw]"
+        className="right-[2vw] hidden lg:block absolute top-0 animate-wrap max-xl:size-[10vw]"
         src="/images/text-circle.png"
         width={157}
         height={157}
@@ -117,7 +117,8 @@ export const Main = () => (
 
       <Link
         className="max-lg:static max-lg:w-full max-lg:justify-center absolute z-2 bottom-[5vw] left-0 flex items-center justify-between w-max gap-10 bg-[#5F29B7] px-[25px] py-[12px] rounded-[35px]"
-        href="#"
+        href="https://t.me/TG_Buyer_bot"
+        target="_blank"
       >
         <p className="max-sm:text-lg text-2xl font-medium">
           Начать пользоваться
@@ -134,7 +135,7 @@ export const Main = () => (
       </Link>
     </section>
 
-    <div className="md:flex max-lg:my-[50px] hidden items-end gap-x-[20px] mt-[-7vw] mb-[100px]">
+    <div className="2xl:mt-[-85px] md:flex max-lg:my-[50px] hidden items-end gap-x-[20px] mt-[-7vw] mb-[100px]">
       <ul className="flex item-center justify-center py-[20px] px-[17px] bg-[#0E0915] rounded-[15px] min-h-[80px]">
         <li className="font-semibold my-auto">Интеграция с AI</li>
       </ul>

@@ -6,22 +6,22 @@ export const navItem = [
   },
   {
     id: 2,
-    name: "Аудитория",
-    href: "#",
+    name: "Приложение",
+    href: "#mini-app",
   },
   {
     id: 3,
     name: "Работа",
-    href: "#",
+    href: "#works",
   },
   {
     id: 4,
-    name: "Возможности",
-    href: "#",
+    name: "Безнес модель",
+    href: "#bizness-model",
   },
   {
     id: 5,
     name: "Цели",
-    href: "#",
+    href: "#targets",
   },
 ];

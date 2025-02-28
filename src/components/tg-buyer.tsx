@@ -74,7 +74,7 @@ export const TGBuyer = () => {
   };
 
   return (
-    <section className="flex flex-col gap-10 relative pb-[100px] px-4 mb-[100px] bg-[url(/images/mini-app-backgraund.png)] bg-cover bg-no-repeat bg-top">
+    <section id="works" className="flex flex-col gap-10 relative pb-[100px] px-4 mb-[100px] bg-[url(/images/mini-app-backgraund.png)] bg-cover bg-no-repeat bg-top">
       <div className="absolute top-0 left-0 right-0 w-full border-[#AA87E2] border-[1px] border-b-0 rounded-tl-[32px] rounded-tr-[32px] pt-[23px] px-[16px] ml-auto block text-[#909090] text-xs text-end">
         TG_BUYER
       </div>

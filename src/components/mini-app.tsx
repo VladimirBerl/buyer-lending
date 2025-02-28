@@ -12,6 +12,14 @@ const tabs = [
   { name: "Особенности", id: 5 },
 ];
 
+const images = [
+  "/images/mini-app-home.png",
+  "/images/mini-app-plan.png",
+  "/images/mini-app-token.png",
+  "/images/mini-app-friends.png",
+  "/images/mini-app-rank.png",
+];
+
 const tabsContent = [
   [
     {
@@ -111,12 +119,14 @@ export const MiniApp = () => {
   };
 
   return (
-    <section className="min-h-[100vh] flex flex-col gap-10 relative px-4 mb-[100px] bg-[url(/images/mini-app-backgraund.png)] bg-cover bg-no-repeat bg-top">
+    <section id="mini-app" className="min-h-[100vh] flex flex-col gap-10 relative px-4 mb-[100px] bg-[url(/images/mini-app-backgraund.png)] bg-cover bg-no-repeat bg-top">
       <div className="absolute top-0 left-0 right-0 w-full border-[#AA87E2] border-[1px] border-b-0 rounded-tl-[32px] rounded-tr-[32px] pt-[23px] px-[16px] ml-auto block text-[#909090] text-xs text-end">
         TG_BUYER
       </div>
 
-      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">Mini-App</h3>
+      <h3 className="max-lg:text-[40px] mt-10 leading-[100%] max-lg:mt-10 text-[72px]">
+        Mini-App
+      </h3>
 
       <div className="max-md:justify-center flex flex-wrap items-center gap-[15px] mb-10">
         {tabs.map((item) => (
@@ -222,8 +232,8 @@ export const MiniApp = () => {
 
         <Image
           className="max-md:hidden absolute top-1/2 right-0 -translate-y-1/2"
-          src="/images/mini-app-iphone.png"
-          width={300}
+          src={images[isActiveTab - 1]}
+          width={220}
           height={600}
           alt="mini-app"
         />

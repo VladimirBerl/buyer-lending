@@ -101,7 +101,7 @@ export const TargetProject = () => {
   const [isActiveTab, setIsActiveTab] = useState(1);
 
   return (
-    <section className="flex flex-col gap-10 relative px-4 mb-[100px]">
+    <section id="targets" className="flex flex-col gap-10 relative px-4 mb-[100px]">
       <div className="absolute top-0 left-0 right-0 w-full border-[#AA87E2] border-[1px] border-b-0 rounded-tl-[32px] rounded-tr-[32px] pt-[23px] px-[16px] ml-auto block text-[#909090] text-xs text-end">
         TG_BUYER
       </div>

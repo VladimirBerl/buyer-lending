@@ -117,7 +117,8 @@ export const Footer = () => {
 
         <Link
           className="w-full flex items-center justify-between max-[460px]:gap-5 gap-10 bg-[#5F29B7] px-[25px] py-[12px] rounded-[35px]"
-          href="#"
+          href="https://t.me/TG_Buyer_bot"
+          target="_blank"
         >
           <p className="max-sm:text-lg max-[460px]:text-sm text-2xl font-medium">
             Начать пользоваться
